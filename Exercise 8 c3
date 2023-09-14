@@ -1,0 +1,18 @@
+people=int(input("Please enter the number of people attending the cookout: "))
+perper=int(input("Enter number of hot dogs per person: "))
+quan=people*perper
+hper=10
+hbunsper=8
+hpn=quan//hper
+hbunspn=quan//hbunsper
+lh=quan%hper
+lhbuns=quan%hbunsper
+print("You will need",hpn,"packages of hot dogs")
+print("You will need",hbunspn,"packages of hot dog buns")
+print("You will have",lh,"hot dogs left over")
+print("You will have",lhbuns,"buns left over")
+
+
+
+
+
