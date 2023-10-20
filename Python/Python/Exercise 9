@@ -1,0 +1,9 @@
+def main():
+    print("We will now calculate the area and circumference of your circle")
+    radius=int(input("please enter the radius of your circle: "))
+    area=3.14159*radius**2
+    print("the area of your circle is ",area)
+    circumference=2*3.14159*radius
+    print("the circumference of your circle is ",circumference)
+
+main()

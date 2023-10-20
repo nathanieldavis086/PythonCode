@@ -1,0 +1,5 @@
+print("Nathaniel Davis")
+print("8390 Delco Ave")
+print('Winnetka, CA 91306')
+print("(818)298-7158")
+print("Undeclared")

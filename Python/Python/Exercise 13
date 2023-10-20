@@ -1,0 +1,13 @@
+def main():
+    print("This program will calculate the number of grapevines that fit in one row of your grapeyard.")
+    r=int(input("please enter the length of one row in feet"))
+    e=int(input("please enter the amount of space in feet that a end-post assembly takes"))
+    s=int(input("please enter the space between each vine in feet"))
+    
+    v=(r-2*e)/s
+    print(s," is the number of grapevines that fit in a row.")
+    print("thanks for playing")
+
+
+
+    main()

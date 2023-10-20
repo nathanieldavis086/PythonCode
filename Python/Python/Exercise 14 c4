@@ -1,0 +1,15 @@
+# File: <Exercise 14 c4>
+# Description: <Decreasing Asterisks>
+# Assignment Name and Number: Chapter 4: Coding Assignment
+#
+# Name: <Nathaniel Davis>
+# GitHub: <nathanieldavis086>
+#
+# On my honor, <Nathaniel Davis>, this programming assignment is my own work
+# and I have not provided this code to any other student.
+BASE_SIZE = 7
+
+for r in range(BASE_SIZE,0,-1):
+    for c in range(r):
+        print('*', end='')
+    print()

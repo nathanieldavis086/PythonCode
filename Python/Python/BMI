@@ -1,0 +1,35 @@
+# A program that asks the user for their height and weight in inches and
+# pounds.
+# Calculates and displays BMI.
+# Then asks user for a potential weight change and determines BMI if that
+# weight change occurs.
+
+
+def main():
+    """Ask for info and compute BMI."""
+
+    # Get height and weight from user.
+    print('This program will compute your BMI, body mass index.')
+    height = int(input('Please enter your height in inches: '))
+    mass = int(input('Please enter your weight in pounds: '))
+
+    # Compute and display initial BMI.
+    # Using formula from https://en.wikipedia.org/wiki/Body_mass_index.
+    bmi = 703 * (mass / (height * 2))
+    # Convert BMI result to a real number with only the tenths place.
+    bmi = int(bmi * 10) / 10
+    print('Current BMI with a weight of', mass, 'and a height of',
+    height, 'is', bmi)
+
+    # Ask for a potential weight change and display new BMI.
+    print()
+    mass_change = int(input('Enter a potential weight change: '))
+    mass += mass_change # equivalent to mass = mass + mass_change
+    # must recompute bmi with new mass
+    bmi = 703 * (mass / (height * 2))
+    bmi = int(bmi * 10) / 10 #method of rounding
+    print('With a weight change of', mass_change, 'pounds your new BMI',
+    'is', bmi)
+
+
+main()
