@@ -1,0 +1,17 @@
+# File: <Exercise 13 c5>
+# Description: <Kinetic Energy>
+# Assignment Name and Number: Chapter 5: Coding Assignment
+#
+# Name: <Nathaniel Davis>
+# GitHub: <nathanieldavis086>
+#
+# On my honor, <Nathaniel Davis>, this programming assignment is my own work
+# and I have not provided this code to any other student.
+
+print("This program takes the velocity and mass of an object and returns the kinetic energy of the object")
+def kinetener():
+    m=int(input("Please enter the mass of your object: "))
+    v=int(input("Please enter the velocity of your object: "))
+    KE=0.5*m*v**2
+    return KE
+print("The kinetic energy of your object is", kinetener())

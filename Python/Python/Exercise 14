@@ -1,0 +1,12 @@
+def main():
+    
+    print("This program will calculate your balance after any number of years based on several factors")
+    P=int(input("Please enter the initial amount of money: "))
+    r=float(input("Please enter your annual interest rate: "))
+    n=int(input("Please enter the number of times per year that your interest is compounded: "))/100
+    t=int(input("Please enter the number of years elapsed: "))
+    A=P*(1+r/n)**(n*t)
+    print("The amount of money you have after",t,"years with an interest rate of",r,"percent and your interest being compounded",n,"times per year is",A)
+    print("thanks for playing")
+
+main()

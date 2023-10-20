@@ -1,0 +1,50 @@
+# A simple program to calculate a users age.
+# Demonstrate simple use of variables.
+
+
+# Ask the user for the year they were born
+# and the current year and then calculate
+# their age.
+def main():
+    # The following shows how the data type of a value stored
+    # by a variable in Python can change.
+    x = 12 # x stores an int
+    print(type(x))
+    x = 17.5 # floating point number 17.5 = 1.75 x 10^1 = 0.175 x 10^2
+    print(type(x))
+    x = 'cs303e' # x stores a String
+    print(type(x))
+
+    # x = w + 100 # is not defined, syntax error
+
+    birth_year = int(input('Please enter the year you were born: '))
+
+    print('You were born in', birth_year)
+    current_year = int((input('Please enter the current year: ')))
+    age = current_year - birth_year
+    print('You will be', age, 'years old in', current_year)
+
+
+main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
